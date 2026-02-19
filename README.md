@@ -1,4 +1,4 @@
-# Data Generator + Exporter (CSV / JSON / XLSX)
+# Data Generator + Exporter (CSV / JSON / XLSX / Oracle)
 
 Small Python project that generates **synthetic data** for a simple **people–workplace–address** domain and exports it into multiple formats.
 
@@ -7,6 +7,7 @@ Small Python project that generates **synthetic data** for a simple **people–w
 * CSV
 * JSON
 * Excel (XLSX)
+* Oracle (optional)
 
 ---
 
@@ -35,8 +36,10 @@ project_root/
 │   │   ├── __init__.py
 │   │   ├── csv_dict.py      # CSV export (Dict-based)
 │   │   ├── json_handler.py  # JSON export
+│   │   ├── oracle.py        # Oracle
 │   │   └── xlsx.py          # Excel (XLSX) export
-│   
+│   │
+
 │
 ├── generator.py             # Synthetic data generation
 ├── model_dataclasses.py     # Domain models (dataclasses, used by the app)
@@ -118,10 +121,51 @@ All generated files are written into the **`output/`** folder.
 
 ---
 
-## Notes
+## Optional: Oracle export
 
-* The project focuses on file-based exports (CSV, JSON, XLSX)
-* No database or PDF generation is required
-* Designed for educational and demonstration purposes
+Oracle export runs only if all required environment variables are set.
+
+### Required environment variables
+
+* ORACLE_USER
+* ORACLE_PASSWORD
+* ORACLE_DSN
+
+## Optional (Windows – Instant Client / Thick mode)
+* ORACLE_LIB_DIR - path to the Instant Client folder
+
+## Option A -- Using .env (recommended)
+Create a .env file from .env.example:
+
+ORACLE_USER=your_user
+ORACLE_PASSWORD=your_password
+ORACLE_DSN=localhost:1521/XEPDB1
+ORACLE_LIB_DIR=C:\Oracle\instantclient_23_0
+
+Install dotenv support:
+python -m pip install python-dotenv
+
+Load .env in your entry point (if used):
+from dotenv import load_dotenv
+load_dotenv()
+
+Run the program: 
+python generator.py
+
+## Option B -- Setting variables in the shell (PowerShell)
+$env:ORACLE_USER="your_user"
+$env:ORACLE_PASSWORD="your_password"
+$env:ORACLE_DSN="localhost:1521/XEPDB1"
+$env:ORACLE_LIB_DIR="C:\Oracle\instantclient_23_0"
+
+Then run:
+python generator.py
 
 ---
+
+## Notes
+
+* Oracle export is completely optional
+* The project works fully without Oracle
+* Designed for educational and demonstration purposes
+
