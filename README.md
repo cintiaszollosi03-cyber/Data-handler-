@@ -114,7 +114,7 @@ python -m pip install -r requirements.txt
 ## Run
 
 ```bash
-python generator.py
+python -m data.generator
 ```
 
 All generated files are written into the **`output/`** folder.
@@ -157,7 +157,7 @@ load_dotenv()
 
 Run the program: 
 ```bash
-python generator.py
+python -m data.generator
 ```
 
 ## Option B -- Setting variables in the shell (PowerShell):
@@ -170,7 +170,7 @@ $env:ORACLE_LIB_DIR="C:\Oracle\instantclient_23_0"
 
 Then run:
 ```bash
-python generator.py
+python -m data.generator
 ```
 ---
 
