@@ -1,0 +1,42 @@
+[
+  {
+    "id": "P-000001",
+    "name": "Feh\u00e9r Anita Anna",
+    "age": 21,
+    "male": false,
+    "workplace": "WP-000002",
+    "address": "A-000001"
+  },
+  {
+    "id": "P-000002",
+    "name": "Dr. Heged\u0171s Z. Attila",
+    "age": 1,
+    "male": true,
+    "workplace": "WP-000001",
+    "address": "A-000002"
+  },
+  {
+    "id": "P-000003",
+    "name": "Dr. Papn\u00e9 T\u00f3th M\u00e1ria Ilona",
+    "age": 95,
+    "male": false,
+    "workplace": "WP-000001",
+    "address": "A-000003"
+  },
+  {
+    "id": "P-000004",
+    "name": "Pap Ferenc",
+    "age": 67,
+    "male": true,
+    "workplace": "WP-000001",
+    "address": "A-000004"
+  },
+  {
+    "id": "P-000005",
+    "name": "Varga Ol\u00e1h G\u00e9za",
+    "age": 19,
+    "male": true,
+    "workplace": "WP-000002",
+    "address": "A-000005"
+  }
+]

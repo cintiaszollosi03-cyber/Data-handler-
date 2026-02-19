@@ -1,0 +1,21 @@
+[
+  {
+    "id": "WP-000001",
+    "name": "Farkas \u00e9s Lakatos Kft.",
+    "location": "Gy\u0151r",
+    "employees": [
+      "P-000002",
+      "P-000003",
+      "P-000004"
+    ]
+  },
+  {
+    "id": "WP-000002",
+    "name": "T\u00f3th \u00e9s t\u00e1rsa Kht.",
+    "location": "Kaposv\u00e1r",
+    "employees": [
+      "P-000001",
+      "P-000005"
+    ]
+  }
+]
