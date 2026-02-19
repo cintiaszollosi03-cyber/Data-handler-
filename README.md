@@ -137,30 +137,41 @@ Oracle export runs only if all required environment variables are set.
 ## Option A -- Using .env (recommended)
 Create a .env file from .env.example:
 
+```bash
 ORACLE_USER=your_user
 ORACLE_PASSWORD=your_password
 ORACLE_DSN=localhost:1521/XEPDB1
 ORACLE_LIB_DIR=C:\Oracle\instantclient_23_0
+```
 
 Install dotenv support:
+```bash
 python -m pip install python-dotenv
+```
 
 Load .env in your entry point (if used):
+```bash
 from dotenv import load_dotenv
 load_dotenv()
+```
 
 Run the program: 
+```bash
 python generator.py
+```
 
-## Option B -- Setting variables in the shell (PowerShell)
+## Option B -- Setting variables in the shell (PowerShell):
+```bash
 $env:ORACLE_USER="your_user"
 $env:ORACLE_PASSWORD="your_password"
 $env:ORACLE_DSN="localhost:1521/XEPDB1"
 $env:ORACLE_LIB_DIR="C:\Oracle\instantclient_23_0"
+```
 
 Then run:
+```bash
 python generator.py
-
+```
 ---
 
 ## Notes
