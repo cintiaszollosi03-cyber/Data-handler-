@@ -178,5 +178,5 @@ python generator.py
 
 * Oracle export is completely optional
 * The project works fully without Oracle
-* Designed for educational and demonstration purposes
+
 
