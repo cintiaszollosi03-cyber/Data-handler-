@@ -114,7 +114,7 @@ python -m pip install -r requirements.txt
 ## Run
 
 ```bash
-python main.py
+python generator.py
 ```
 
 All generated files are written into the **`output/`** folder.
