@@ -1,7 +1,0 @@
-id;name;age;male;workplace;address
-P-000001;Horváthné Dr. Szabó Klára;87;False;Workplace(id='WP-000001', name='Gál és társa Bt.', location='Nyékgyörgyfa', employees=['P-000001']);A-000001
-P-000002;Hegedűs Imrené Biró Anikó;2;False;Workplace(id='WP-000004', name='Kovács és Kocsis Nyrt.', location='Budapest', employees=['P-000002']);A-000002
-P-000003;A. Antal Krisztina;97;False;Workplace(id='WP-000002', name='Nagy Horváth Kft.', location='Tatabánya', employees=['P-000003', 'P-000006']);A-000003
-P-000004;Vörös Nagy János;80;True;Workplace(id='WP-000003', name='Horváth és Tamás Bt.', location='Salgótarján', employees=['P-000004', 'P-000005']);A-000004
-P-000005;Kissné Vass Eszter Mónika;86;False;Workplace(id='WP-000003', name='Horváth és Tamás Bt.', location='Salgótarján', employees=['P-000004', 'P-000005']);A-000005
-P-000006;Horváth Jenőné Gulyás Szilvia;47;False;Workplace(id='WP-000002', name='Nagy Horváth Kft.', location='Tatabánya', employees=['P-000003', 'P-000006']);A-000006
