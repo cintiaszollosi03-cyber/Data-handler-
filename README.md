@@ -1,4 +1,4 @@
-# Data Generator + Exporter (CSV / JSON / XLSX / PDF / Oracle)
+# Data Generator + Exporter (CSV / JSON / XLSX)
 
 Small Python project that generates **synthetic data** for a simple **people–workplace–address** domain and exports it into multiple formats.
 
